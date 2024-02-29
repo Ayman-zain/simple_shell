@@ -29,13 +29,12 @@ if (p)
 		if (stat(fp, &buffer) == 0)
 		{
 			free(pc);
-
-		return (fp);
+			return (fp);
 		}
 		else
 		{
-		free(fp);
-		pt = strtok(NULL, ":");
+			free(fp);
+			pt = strtok(NULL, ":");
 		}
 	}
 	free(pc);
@@ -43,6 +42,7 @@ if (p)
 		return (command);
 	return (NULL);
 }
+
 	return (NULL);
 }
 /**

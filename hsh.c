@@ -72,7 +72,7 @@ for (i = 0; token != NULL; i++)
 void exe(char **args)
 {
 pid_t pid, wpid;
-int status;
+int status, i;
 char *c1, *c2;
 
 pid = fork();
@@ -97,5 +97,7 @@ else
 	} while (!WIFEXITED(status) && !WIFSIGNALED(status));
 }
 wpid = wpid + (1 - 1);
+for (i = 0; args[i] != NULL; i++)
+	free(args[i]);
 free(args);
 }
