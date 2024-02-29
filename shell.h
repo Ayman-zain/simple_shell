@@ -25,16 +25,5 @@ int _putchar(char c);
 void _puts(char *str);
 void exe(char **args);
 char  *_getenv(char *name);
-/*char *builtin_str[] = {
-	"cd",
-	"exit",
-	"env"
-};
 
-int (*builtin_func[]) (char **) = {
-	&my_cd,
-	&my_env,
-	&my_exit
-};
-*/
 #endif

@@ -39,38 +39,6 @@ for (i = 0; i < n; ++i)
 return (0);
 }
 /**
- * print_list_str - prints only the str element of a list_t linked list
- * @h: pointer to first node
- *
- * Return: size of list
- *
-size_t print_list_str(const list_t *h)
-{
-	size_t i = 0;
-
-	while (h)
-	{
-		_puts(h->str ? h->str : "(nil)");
-		_puts("\n");
-		h = h->next;
-		i++;
-	}
-	return (i);
-}
-	while (*str1 && *str2)
-	{
-		if (*str1 != *str2)
-			return (*str1 - *str2);
-		str1++;
-		str2++;
-	}
-	if (*str1 == *str2)
-		return (0);
-	else
-		return (*str1 < *str2 ? -1 : 1);
-}
-*/
-/**
  * _strcmp - performs lexicogarphic comparison of two strangs.
  * @s1:string
  * @s2:  string
