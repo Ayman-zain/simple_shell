@@ -5,7 +5,7 @@
  */
 int hsh(void)
 {
-char *lptr;
+char *lptr = NULL;
 char **args;
 size_t n = 0;
 int r = 0;
@@ -40,7 +40,7 @@ char *sc;
 const char *delim = " \n";
 int i;
 
-sc = malloc(sizeof(char) * r);
+sc = malloc((sizeof(char) * r) + 1);
 
 if (!sc)
 	perror("tsh: memory allocation error");
